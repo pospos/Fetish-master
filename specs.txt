@@ -1,0 +1,58 @@
+
+FETISH
+
+Algorithm SHA256;
+690k FETISH; 
+2.3 FETISH per block;
+Rewards halves 200k; 
+Minimum reward 1.15 FETISH;
+Maximum blocks to mine 400k; 
+No PoS (ever);
+
+
+Block time 60 seconds; 
+Retarget every couple of blocks; 
+Low Starting difficulty; 
+
+
+Fetish.conf
+
+rpcuser=
+rpcpassword=
+rpcallowip=127.0.0.1
+rpcport=32119
+port=32118
+server=1
+daemon=1
+listen=1
+addnode=188.226.162.76
+addnode=178.62.150.165
+addnode=104.131.234.129
+addnode=162.243.213.10​
+addnode=162.243.124.149
+
+
+
+
+
+Nodes
+Here is a bunch of nodes I captured from a daemon
+
+
+addnode=188.226.162.76:22118
+addnode=178.62.150.165:22118
+addnode=162.243.213.10:22118
+addnode=108.61.10.90:22118
+addnode=195.12.60.154:22118
+addnode=99.69.106.28
+addnode=162.243.124.149
+addnode=66.29.187.53
+addnode=198.27.125.17:45820 
+addnode=188.226.162.76:41275
+addnode=99.137.226.94:53820 
+addnode=66.29.187.51:51775 
+addnode=99.69.106.28:51987 
+addnode=79.26.58.189:63614 
+addnode=188.180.62.185:37782 
+addnode=104.131.234.129:44120 
+addnode=162.243.124.149:41992
