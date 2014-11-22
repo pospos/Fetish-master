@@ -14,6 +14,7 @@ Fetish Specs
 1 minute average per block
 
 Retarget every 2 blocks
+
 ============
 
 Rewards
