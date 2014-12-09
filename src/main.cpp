@@ -1253,19 +1253,53 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     int64 nSubsidy = nStartSubsidy;
 
     //giveaway etc
-    if(nHeight > 9 && nHeight < 11){
-        nSubsidy = 6900 * COIN;
+     
+      if(nHeight > 9 && nHeight < 11)
+      {
+      nSubsidy = 6900 * COIN;
+      }
+
+
+      if(nHeight > 300000)   
+      {
+      nSubsidy = 0.5 * COIN;
+      }
+
+      
+      if(nHeight > 400000)   
+      {
+      nSubsidy = 0.3 * COIN;
+      }
+
+      
+      if(nHeight > 500000)   
+      {
+      nSubsidy = 2.2 * COIN;
+      }
+
+
+      if(nHeight > 510000)   
+      {
+      nSubsidy =  0.1 * COIN;
+      }
+
+
+      if(nHeight > 630000 && nHeight < 999000)   
+      {
+      nSubsidy = 0.001 * COIN;
+      }
    
     
-    return nSubsidy + nFees;
-}
+    //return nSubsidy + nFees;
+//}
 
     // Mining phase: Subsidy is cut in half every SubsidyHalvingInterval
-    nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
+    //nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
     
     // Inflation phase: Subsidy reaches minimum subsidy
     // Network is rewarded for transaction processing with transaction fees and 
     // the inflationary subsidy
+    
     if (nSubsidy < nMinSubsidy)
     {
         nSubsidy = nMinSubsidy;
